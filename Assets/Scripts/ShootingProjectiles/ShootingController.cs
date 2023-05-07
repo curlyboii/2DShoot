@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 /// </summary>
 public class ShootingController : MonoBehaviour
 {
+    
     [Header("GameObject/Component References")]
     [Tooltip("The projectile to be fired.")]
     public GameObject projectilePrefab = null;
