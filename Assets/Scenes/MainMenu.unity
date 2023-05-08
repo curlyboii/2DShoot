@@ -1004,9 +1004,9 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 1, g: 0.73018867, b: 0.73018867, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1210,6 +1210,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 68.70277
       objectReference: {fileID: 0}
+    - target: {fileID: 746639449694601022, guid: bbe1dc66162244b44880a998673310aa, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 746639449912406456, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1242,6 +1246,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 746639450106484729, guid: bbe1dc66162244b44880a998673310aa, type: 3}
+      propertyPath: m_Transition
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 746639450106484730, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_SizeDelta.x
       value: 260.07
@@ -1257,6 +1265,10 @@ PrefabInstance:
     - target: {fileID: 746639450106484730, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 746639450149339393, guid: bbe1dc66162244b44880a998673310aa, type: 3}
+      propertyPath: m_Transition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 746639450149339394, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1297,6 +1309,10 @@ PrefabInstance:
     - target: {fileID: 746639450237043108, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -145.38187
+      objectReference: {fileID: 0}
+    - target: {fileID: 746639450237046362, guid: bbe1dc66162244b44880a998673310aa, type: 3}
+      propertyPath: m_Transition
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 746639450350325322, guid: bbe1dc66162244b44880a998673310aa, type: 3}
       propertyPath: m_FontData.m_MinSize
