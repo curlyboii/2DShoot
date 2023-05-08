@@ -14,6 +14,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public Text textEnemiesCounter;
+    public GameObject boss;
 
     // The script that manages all others
     public static GameManager instance = null;
@@ -192,16 +193,18 @@ public class GameManager : MonoBehaviour
     public void IncrementEnemiesDefeated()
     {
         enemiesDefeated++;
+        textEnemiesCounter.text = enemiesDefeated.ToString();
         if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable)
+        {
+            LevelCleared();
+        }
+        else if(boss == null)
         {
             LevelCleared();
         }
     }
 
-    private void Update()
-    {
-        textEnemiesCounter.text = enemiesDefeated.ToString();
-    }
+
 
     /// <summary>
     /// Description:
