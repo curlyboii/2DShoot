@@ -6,12 +6,15 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 /// <summary>
 /// Class which manages the game
 /// </summary>
 public class GameManager : MonoBehaviour
 {
+    public Text textEnemiesCounter;
+
     // The script that manages all others
     public static GameManager instance = null;
 
@@ -193,6 +196,11 @@ public class GameManager : MonoBehaviour
         {
             LevelCleared();
         }
+    }
+
+    private void Update()
+    {
+        textEnemiesCounter.text = enemiesDefeated.ToString();
     }
 
     /// <summary>
