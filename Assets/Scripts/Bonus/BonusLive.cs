@@ -11,8 +11,15 @@ public class BonusLive : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            health.currentLives += 1;
-            Destroy(gameObject);
+            if (health.currentLives < 5)
+            {
+                health.currentLives += 1;
+                Destroy(gameObject);
+            }
+            else
+            {
+                Debug.Log("You have maximum lives!");
+            }
         }
     }
 }
