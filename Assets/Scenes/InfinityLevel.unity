@@ -172,7 +172,7 @@ MonoBehaviour:
   spawnRangeX: 15
   spawnRangeY: 15
   maxSpawn: 25
-  spawnInfinite: 0
+  spawnInfinite: 1
   spawnDelay: 6
   projectileHolder: {fileID: 0}
 --- !u!1 &16298215
@@ -5387,6 +5387,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &218756786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218756787}
+  m_Layer: 0
+  m_Name: BossTemplate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &218756787
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218756786}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 275.0556, y: 155.91847, z: -0.9239974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &223387602
 GameObject:
   m_ObjectHideFlags: 0
@@ -8241,7 +8272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
       propertyPath: spawnInfinite
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
@@ -30345,8 +30376,8 @@ MonoBehaviour:
   spawnRangeX: 20
   spawnRangeY: 20
   maxSpawn: 5
-  spawnInfinite: 0
-  spawnDelay: 7
+  spawnInfinite: 1
+  spawnDelay: 15
 --- !u!1 &1347181827
 GameObject:
   m_ObjectHideFlags: 0
@@ -31740,7 +31771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7125813286935845035, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
       propertyPath: spawnInfinite
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e903e268f1c00834c8e490d6931613ec, type: 3}
@@ -33697,7 +33728,7 @@ MonoBehaviour:
   spawnRangeX: 15
   spawnRangeY: 15
   maxSpawn: 25
-  spawnInfinite: 0
+  spawnInfinite: 1
   spawnDelay: 8
   projectileHolder: {fileID: 0}
 --- !u!1 &1481789634
@@ -45189,9 +45220,9 @@ MonoBehaviour:
   bonusPrefab: {fileID: 458184601}
   spawnRangeX: 30
   spawnRangeY: 30
-  maxSpawn: 5
+  maxSpawn: 7
   spawnInfinite: 0
-  spawnDelay: 5
+  spawnDelay: 15
 --- !u!1 &2031502332
 GameObject:
   m_ObjectHideFlags: 0
@@ -47724,6 +47755,10 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 4867940027157724161, guid: fb3863dec9ed61644a34a2455dd1bc1d, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 218756786}
+    - target: {fileID: 4867940027157724161, guid: fb3863dec9ed61644a34a2455dd1bc1d, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 886761561}
@@ -47733,11 +47768,11 @@ PrefabInstance:
       objectReference: {fileID: 1778509719}
     - target: {fileID: 4867940027157724161, guid: fb3863dec9ed61644a34a2455dd1bc1d, type: 3}
       propertyPath: gameIsWinnable
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4867940027157724161, guid: fb3863dec9ed61644a34a2455dd1bc1d, type: 3}
       propertyPath: enemiesToDefeat
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4867940027157724161, guid: fb3863dec9ed61644a34a2455dd1bc1d, type: 3}
       propertyPath: gameOverPageIndex
@@ -48018,6 +48053,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1461263634}
     m_Modifications:
+    - target: {fileID: 2632376578363611729, guid: fb39c88cac38241458f347f830295372, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632376578683241371, guid: fb39c88cac38241458f347f830295372, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632376578755966585, guid: fb39c88cac38241458f347f830295372, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2632376579456365590, guid: fb39c88cac38241458f347f830295372, type: 3}
       propertyPath: m_Name
       value: Instruction
@@ -48110,9 +48157,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2632376579997301907, guid: fb39c88cac38241458f347f830295372, type: 3}
+      propertyPath: m_Text
+      value: Thank you!
+      objectReference: {fileID: 0}
     - target: {fileID: 2632376580117256134, guid: fb39c88cac38241458f347f830295372, type: 3}
       propertyPath: m_Text
-      value: You need to defeat 100 enemies to complete the level!
+      value: "This is an endless level! \n\nTest your abilities and score as many
+        points as possible!\n\nGood luck!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2632376580117256185, guid: fb39c88cac38241458f347f830295372, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -9.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb39c88cac38241458f347f830295372, type: 3}
@@ -48263,10 +48319,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8367270388532296260, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 375.8889
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367270388532296260, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 227.94443
+      objectReference: {fileID: 0}
     - target: {fileID: 8367270389712249339, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1778509719}
+    - target: {fileID: 8367270389831870507, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 287.6843
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367270389831870507, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 183.44217
+      objectReference: {fileID: 0}
     - target: {fileID: 9086806205513167228, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3

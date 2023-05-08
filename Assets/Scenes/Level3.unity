@@ -21450,7 +21450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1203372632725356873, guid: da47b5989e1cc9b4ca8783df883d2d88, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da47b5989e1cc9b4ca8783df883d2d88, type: 3}
@@ -21649,7 +21649,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a49e291e9e189ca47bf49672d5c292ba, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3a2ce2cc48514564fa06d6f078d52779, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -48378,10 +48378,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8367270388532296260, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 363.5819
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367270388532296260, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 221.79097
+      objectReference: {fileID: 0}
     - target: {fileID: 8367270389712249339, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1778509719}
+    - target: {fileID: 8367270389831870507, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 270.7623
+      objectReference: {fileID: 0}
+    - target: {fileID: 8367270389831870507, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 174.98117
+      objectReference: {fileID: 0}
     - target: {fileID: 9086806205513167228, guid: 92f219fb93bc47a4ba0955f66ee9abbd, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3
